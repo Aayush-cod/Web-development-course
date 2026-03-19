@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(218, 117, 117);
+    color: white;
+}
+
+td{
+    border: 2px solid black;
+}
+
+p{
+    background-color: aquamarine;
+}
+
+a{background-color: beige;}
+
+/* Class for css */
+
+.red{
+   background-color: blue;
+}
+
+.bg-yellow{
+    color: red;
+}
+
+/* Unique id css */
+
+#firstid{
+    background-color: green;
+}
