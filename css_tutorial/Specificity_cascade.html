@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: aqua;
+        }
+
+        /* 
+        Here specificity value becomes 1 for element + 10 for class = 11 */
+
+        h1.yellow {
+            color: yellow;
+        }
+
+        .cred {
+            color: red;
+        }
+
+        .cpurple {
+            color: purple;
+        }
+
+        #h1 {
+            color: green;
+        }
+
+        [data-x=a] {
+            background-color: aquamarine;
+
+        }
+
+
+        /* The total sepecifity is 1+10+10+10(attribute selector)+ 10(pseudo-class)= 41 */
+        a.harryclass.rohan-class[href]:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<!-- the Specificity Hierarchy -
+
+Inline Style > ID Selector > Class/Attribute/Pseudo-class > Element Selector > Universal Selector -->
+
+<body>
+    <h1 class="yellow cred cpurple">Css Specificity</h1>
+
+    <h1 style="color: blue;" class="yellow cred cpurple" data-x="a">Css Specificity</h1>
+</body>
+
+</html>
