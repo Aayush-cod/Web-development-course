@@ -6,13 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card</title>
     <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            padding-left: 50px;
+            padding-top: 50px;
+            display: flex;
+            margin: 3px;
+
+        }
         .card {
             height: 500px;
             width: 300px;
             border: 2px solid gray;
             border-radius: 12px;
-            position: absolute;
+            margin: 9px;
             box-shadow: 5px 5px 15px 5px #6d6e6d;
+        }
+
+        .img{
+            padding: 2px;
         }
 
         .img img {
@@ -34,32 +50,45 @@
 
         .box1 span {
             border: 1px solid gray;
-            border-radius: 10px;
-            padding: 2px;
+            border-radius: 14px;
+            padding: 4px 8px 4px 8px;
+            
+            opacity: 40%;
         }
 
         .content {
             padding-left: 12px;
             padding-right: 10px;
+            padding-top: 10px;
             
             
+        }
+        .content p{
+            padding-top: 5px;
+            opacity: 40%;
         }
 
         .button {
-            align-content: center;
-            position: relative;
-            left: 6vw;
-            top: 10px;
+            text-align: center;
+            
+            padding-top: 20px;
         }
 
-        .button span {
+        .button button {
             border: 1px solid gray;
             border-radius: 18px;
             padding: 10px;
             color: rgb(58, 124, 194);
             background-color: rgb(227, 237, 239);
+            cursor: pointer;
            
 
+        }
+
+        .button button:hover{
+
+            color: rgb(174, 194, 217);
+            background-color: rgb(7, 57, 67);
         }
     </style>
 </head>
@@ -89,10 +118,100 @@
 
 
 
-        <div class="button"><span>Read more</span></div>
+        <div class="button"><button>Read more</button></div>
 
 
     </div>
+
+    <div class="card">
+
+        <div class="img">
+
+            <img src="https://www.desktophut.com/images/1706121121.webp" height="200px" width="280px" padding="3px">
+        </div>
+
+
+
+        <div class="box1">
+            <span>Nature</span>
+            <span>Nature</span>
+        </div>
+
+        <div class="content">
+            <h1> Lago di Braies</h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum reprehenderit odio, odit voluptatibus
+                sunt eveniet. Recusandae repellendus eum beatae officia!</p>
+
+        </div>
+
+
+
+        <div class="button"><button>Read more</button></div>
+
+
+    </div>
+
+     <div class="card">
+
+        <div class="img">
+
+            <img src="https://www.desktophut.com/images/1706121121.webp" height="200px" width="280px" padding="3px">
+        </div>
+
+
+
+        <div class="box1">
+            <span>Nature</span>
+            <span>Nature</span>
+        </div>
+
+        <div class="content">
+            <h1> Lago di Braies</h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum reprehenderit odio, odit voluptatibus
+                sunt eveniet. Recusandae repellendus eum beatae officia!</p>
+
+        </div>
+
+
+
+        <div class="button"><button>Read more</button></div>
+
+
+    </div>
+
+     <div class="card">
+
+        <div class="img">
+
+            <img src="https://www.desktophut.com/images/1706121121.webp" height="200px" width="280px" padding="3px">
+        </div>
+
+
+
+        <div class="box1">
+            <span>Nature</span>
+            <span>Nature</span>
+        </div>
+
+        <div class="content">
+            <h1> Lago di Braies</h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum reprehenderit odio, odit voluptatibus
+                sunt eveniet. Recusandae repellendus eum beatae officia!</p>
+
+        </div>
+
+
+
+        <div class="button"><button>Read more</button></div>
+
+
+    </div>
+
+
+
 
 </body>
 

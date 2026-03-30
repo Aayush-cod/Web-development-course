@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css media Query</title>
+    <style>
+        body {
+            background-color: red;
+        }
+
+        @media screen and (orientation: landscape) {
+            body {
+                border: 4px solid purple;
+            }
+        }
+
+
+        @media screen and (orientation: portrait) {
+            body {
+                border: 4px solid yellow;
+            }
+        }
+
+        /* @media not|only mediatype and (expressions){
+        CSS code} */
+
+        @media only screen and (max-width: 500px) {
+            body {
+                background-color: blue;
+            }
+
+            .boxes {
+                flex-direction: column;
+            }
+        }
+
+        .boxes {
+            display: flex;
+        }
+
+        .box {
+            height: 244px;
+            width: 244px;
+            background-color: antiquewhite;
+            padding: 3px;
+            margin: 3px;
+
+        }
+    </style>
+</head>
+
+<body>
+    I am a red body guy!
+
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
