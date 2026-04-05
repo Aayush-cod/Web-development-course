@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Animations</title>
+    <style>
+        .container{
+
+            height: 80vh;
+            width: 30vw;
+            background-color: rgb(20, 113, 113);
+
+        }
+
+        .box{
+
+            background-color: aqua;
+            height: 34px;
+            width: 45px;
+
+            animation: AyushAnimation;
+            animation-duration: 4s;
+            animation-iteration-count: 3;
+            animation-timing-function: cubic-bezier(0, 0.6, 0.75, 0.81);
+            animation-delay: 1s;
+
+        }
+
+
+        @keyframes AyushAnimation {
+
+            from{
+
+            }
+
+            to{
+                transform: translateX(1000px);
+            }
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+</body>
+</html>
